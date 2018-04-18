@@ -1,7 +1,7 @@
 {
-  "name": "Trusted news",
+  "name": "Trust this news",
   "version": "0.1",
-  "description": "Chrome extension trusted news",
+  "description": "Trust this news - chrome extension",
   "permissions": ["activeTab", "tabs", "http://dev-chrome-extension.pantheonsite.io/", "*://*/*"],
   "icons":{
     "128": "img/icon128.png",
@@ -14,7 +14,7 @@
   },
   "browser_action": {
     "default_popup": "index.html",
-    "default_title": "img/icon16.png",
+    "default_icon": "img/icon16.png",
     "default_title": "Trusted news"
   },
   "manifest_version": 2
