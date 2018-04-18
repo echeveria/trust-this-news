@@ -1,0 +1,48 @@
+h1{
+    font-size: 18px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 25px;
+}
+#news-container{
+    margin:10px 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news{
+    margin: 10px;
+    padding: 5px 10px;
+    border: 1px solid;
+    font-weight: bold;
+    min-width: 20%;
+    text-align: center;
+}
+
+.true-news{
+    background-color: #10cb38;
+}
+
+.half-true-news{
+    background-color: #fff419;
+}
+
+.fake-news{
+    background-color: #ff0505;
+}
+
+.news .tooltiptext {
+    visibility: hidden;
+    width: auto;
+    background-color: #fff;
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    top:0;
+    left: 5px;
+    z-index: 1;
+}
+
+.news:hover .tooltiptext {
+    visibility: visible;
+}
