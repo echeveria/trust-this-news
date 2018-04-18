@@ -1,0 +1,17 @@
+{
+  "appName": {
+    "message": "Истинска, полуистинска, или фалшива"
+  },
+  "appDesc": {
+    "message": "Истинска, полуистинска, или фалшива новина - разширение за хром"
+  },
+  "trueTooltip": {
+    "message": "Истина"
+  },
+  "halfTrueTooltip": {
+    "message": "Полуистина"
+  },
+  "fakeTooltip": {
+    "message": "Неистина"
+  }
+}
