@@ -5,12 +5,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const TrueNewsEle = document.querySelectorAll(".true-news")[0];
         const HalfTrueNewsEle = document.querySelectorAll(".half-true-news")[0];
         const FakeNewsEle = document.querySelectorAll(".fake-news")[0];
+        const Title = document.querySelectorAll("h1")[0];
 
         TrueNewsEle.querySelectorAll(".tooltiptext")[0].innerHTML = chrome.i18n.getMessage('trueTooltip');
         HalfTrueNewsEle.querySelectorAll(".tooltiptext")[0].innerHTML = chrome.i18n.getMessage('halfTrueTooltip');
         FakeNewsEle.querySelectorAll(".tooltiptext")[0].innerHTML = chrome.i18n.getMessage('fakeTooltip');
+        Title.innerHTML = chrome.i18n.getMessage("appAbbreviation");
 
-        var xhr = new XMLHttpRequest();
+        let xhr = new XMLHttpRequest();
         xhr.open("GET", "http://dev-chrome-extension.pantheonsite.io/api/news?_format=json&url=" + tab.url, true);
 
         xhr.onreadystatechange = function() {

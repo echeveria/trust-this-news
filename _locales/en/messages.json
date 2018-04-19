@@ -2,6 +2,9 @@
   "appName": {
     "message": "True, half-truth or fake"
   },
+  "appAbbreviation": {
+    "message": "THF"
+  },
   "appDesc": {
     "message": "True, half-truth or fake news - chrome extension"
   },
