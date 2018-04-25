@@ -3,7 +3,7 @@
   "description": "__MSG_appDesc__",
   "version": "0.1",
   "default_locale": "en",
-  "permissions": ["activeTab", "tabs", "http://dev-chrome-extension.pantheonsite.io/", "*://*/*"],
+    "permissions": ["activeTab", "tabs", "http://dev-chrome-extension.pantheonsite.io/", "*://*/*"],
   "icons":{
     "128": "img/icon128.png",
     "48": "img/icon48.png",
@@ -18,5 +18,10 @@
     "default_icon": "img/icon16.png",
     "default_title": "__MSG_appName__"
   },
+  "content_scripts": [{
+    "css": ["style/page.css"],
+    "js": ["content.js"],
+    "matches": ["*://*/*"]
+  }],
   "manifest_version": 2
 }
